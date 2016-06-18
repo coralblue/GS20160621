@@ -24,3 +24,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.0.0-beta1'
     compile project(':modules:volley')
 }
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile 'com.example.library:android-cloud-sdk-v2.4.9@aar'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.squareup.okhttp:okhttp-apache:2.7.2'
+}
